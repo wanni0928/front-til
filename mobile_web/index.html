@@ -14,41 +14,42 @@
     <div class="app-header">
         <h1 class="brand">
             <a href="https://www.ediya.com/" target="_blank">
-                <img class="respons" src="./images/multicampus.svg" alt="multi campus" />
+                <img class="respons" src="./asset/images/multicampus.svg" alt="multi campus" />
             </a>
         </h1>
+    
+      <button 
+      type="button"    
+      class="button is-open-menu"
+      title="open menu"
+      aria-label="open menu"
+          >
+          <span class="ir"></span>
+      </button>
+      <nav class="app-navigation">
+          <h2 class="a11y-hidden">메인 메뉴</h2>
+          <ul class="reset-list">
+              <li><a href="#">메뉴</a></li>
+              <li><a href="#">이디야멤버스</a></li>
+              <li><a href="#">이디야커피랩</a></li>
+              <li><a href="#">이디야컬쳐랩</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">매장찾기</a></li>
+          </ul>
+          <button class="button is-close-menu"
+          type="button"
+          title="close menu"
+          aria-label="close menu">
+              <span class="close"
+              aria-hidden="true">
+                  x
+              </span>
+          </button>
+      </nav>
     </div>
-    <button 
-    type="button"    
-    class="button is-open-menu"
-    title="open menu"
-    aria-label="open menu"
-        >
-        <span class="ir"></span>
-    </button>
-    <nav class="app-navigation" hidden>
-        <h2 class="ally-hidden">메인 메뉴</h2>
-        <ul class="trdry-lidy">
-            <li><a href="#">메뉴</a></li>
-            <li><a href="#">이디야멤버스</a></li>
-            <li><a href="#">이디야커피랩</a></li>
-            <li><a href="#">이디야컬쳐랩</a></li>
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">매장찾기</a></li>
-        </ul>
-        <button class="button is-close-menu"
-        type="button"
-        title="close menu"
-        aria-label="close menu">
-            <span class="close"
-            aria-hidden="true">
-                x
-            </span>
-        </button>
-    </nav>
     <!-- main contents -->
     <main class="app-main">
-        <h2 class="ally-hidden">이디야 음료</h2>
+        <h2 class="a11y-hidden">이디야 음료</h2>
         <p hidden> 음료의 배경 색상이 하늘색인 경우 여름 한정 메뉴 입니다.</p>
         <ul class="ediya-menu reset-list">
             <li class="ediya-menu__item">
