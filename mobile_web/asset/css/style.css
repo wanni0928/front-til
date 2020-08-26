@@ -25,6 +25,9 @@ nav a {
     cursor: pointer;
     border: none;
 }
+a img{
+    vertical-align: middle;
+}
 
 /* header */
 .app-header {
@@ -99,4 +102,85 @@ nav a {
     max-width: 960px;
     box-sizing: border-box;
     margin: 90px auto 40px;
+}
+
+.ediya-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.ediya-menu__item{
+    position: relative;
+    flex: 1 1 40%;
+    margin: 10px;
+}
+.ediya-menu__item a{
+    display: block;
+    background-color: #f5f5f5;
+    text-decoration: none;
+    color: #464646;
+}
+
+.ediya-menu__item figure{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ediya-menu__item img {
+    user-select: none;
+    max-width: 330px;
+    min-width: 240px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ediya-menu__item figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ediya-menu__item figcaption{
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.ediya-menu__item--detail {
+    opacity: 0;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #e0e0e0;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.ediya-menu__item--name {
+    display: block;
+    border-bottom: 2px solid #202023;
+    padding-bottom: 1em;
+    font-weight: 400;
+    font-size: 18px;
+    color: #202022;
+}
+
+.ediya-menu__item--multi-column.is-2 {
+    column-count: 2;
+}
+
+.ediya-menu__item--detail .button.is-close-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px 15px;
+    font-size: 24px;
+    background: transparent;
 }
